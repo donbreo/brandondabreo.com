@@ -1,0 +1,1 @@
+uwsgi --http-socket :8080 --plugin python --wsgi-file __main__.py --callable app
