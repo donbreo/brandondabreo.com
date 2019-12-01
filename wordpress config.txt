@@ -1,8 +1,0 @@
-database name:
-wpbrancv
-
-username:
-wpuserbrancv
-
-password:
-BrAnCv7698#$45
