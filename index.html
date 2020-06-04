@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Brandon</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brandon D'Abreo</title>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155190511-1"></script>
 <script>
@@ -31,38 +31,147 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZQ7KJ7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <div id="header">
-			<span id="name">Brandon D'Abreo</span>
-			
-			<nav><!-- brandondabreo.com: now with less code! -->
-				<ul id="navigation">
-					<li class="first active">
-						<a href="https://brandondabreo.com/">home</a>
-					</li>
 
-					<!-- <li>
-						<a href="https://brandondabreo.com/projects">projects</a>
-					</li> -->
 
-					<li>
-						<a href="https://www.linkedin.com/in/brandondabreo/">linkedin</a>
-					</li>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans|Droid+Sans+Mono);
+* {
+  box-sizing: border-box;
+}
 
-					<li>
-						<a href="https://stackoverflow.com/users/12511908/brandon">stackoverflow</a>
-					</li>
+body {
+	background: linear-gradient(to right, #1f1f1f, #464646);
+	margin:  0;
+	padding: 0;
+	width: 100%;
+	color: #eee;
+	font-family: 'Noto Sans', sans-serif;
+}
 
-					<li>
-						<a href="https://github.com/donbreo/">github</a>
-					</li>
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
 
-					<li>
-						<a href="https://brandondabreo.com/resume.pdf">resume</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+.nav > .nav-header {
+  display: inline;
+}
 
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+#content {
+	margin-top:   40px;
+	text-align: justify;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+a {
+ color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Brandon D'Abreo
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="https://brandondabreo.com/">home</a>
+    <a href="https://www.linkedin.com/in/brandondabreo/">linkedin</a>
+    <a href="https://stackoverflow.com/users/12511908/brandon">stackoverflow</a>
+    <a href="https://github.com/donbreo/">github</a>
+    <a href="https://brandondabreo.com/resume.pdf">resume</a>
+  </div>
+</div>
 		<div id="content">
 			<p>
 				Hi! I'm Bran.
@@ -78,11 +187,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<div>
 				Contact me for pretty much any reason!
-        <ul style="margin-top: 0; list-style-type: none;">
+        	<ul style="margin-top: 0; list-style-type: none;">
           <li>on Mobile: +91 9920 55 6006</li>
           <li style="font-size: .8em;">or by email: <a href="mailto:email@brandondabreo.com">email@brandondabreo.com</a></li>
-        </ul>
+        	</ul>
 			</div>
-	</div>
-  </body>
+		</div>
+</body>
 </html>
