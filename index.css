@@ -1,176 +1,116 @@
 body {
-  overflow: hidden;
-  background: linear-gradient(to right, #bf00b2, #5000bf);
+	background: linear-gradient(to right, #1f1f1f, #464646);
+	margin:  0;
+	padding: 0;
+	width: 70%;
+	color: #eee;
+	font-family: 'Noto Sans', sans-serif;
 }
 
-.menu-toggler {
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  z-index: 2;
-  opacity: 0;
-  cursor: pointer;
-}
-.menu-toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {
-  background: white;
+#header {
+	margin-left:  80px;
+	margin-top:   60px;
+	margin-right: 80px;
 }
 
-.menu-toggler:checked + label {
-  background: transparent;
-}
-.menu-toggler:checked + label:before, .menu-toggler:checked + label:after {
-  top: 0;
-  width: 40px;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-.menu-toggler:checked + label:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.menu-toggler:checked + label:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+nav, #navigation, #navigation li {
+	display: inline;
+	margin:  0; /* do a bit of a reset on the margin & padding so we can customise later */
+	padding: 0;
 }
 
-.menu-toggler:checked ~ ul .menu-item {
-  opacity: 1;
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
-  -webkit-transform: rotate(0deg) translateX(-110px);
-          transform: rotate(0deg) translateX(-110px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-  -webkit-transform: rotate(60deg) translateX(-110px);
-          transform: rotate(60deg) translateX(-110px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-  -webkit-transform: rotate(120deg) translateX(-110px);
-          transform: rotate(120deg) translateX(-110px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-  -webkit-transform: rotate(180deg) translateX(-110px);
-          transform: rotate(180deg) translateX(-110px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-  -webkit-transform: rotate(240deg) translateX(-110px);
-          transform: rotate(240deg) translateX(-110px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(6) {
-  -webkit-transform: rotate(300deg) translateX(-110px);
-          transform: rotate(300deg) translateX(-110px);
-}
-.menu-toggler:checked ~ ul .menu-item a {
-  pointer-events: auto;
+nav {
+	display: inline-table; /* If the nav needs to be on a newline, we push ALL of it at once instead of splitting it up. */
 }
 
-.menu-toggler + label {
-  width: 40px;
-  height: 5px;
-  display: block;
-  z-index: 1;
-  border-radius: 2.5px;
-  background: rgba(255, 255, 255, 0.7);
-  transition: top 0.5s, -webkit-transform 0.5s;
-  transition: transform 0.5s, top 0.5s;
-  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.menu-toggler + label:before, .menu-toggler + label:after {
-  width: 40px;
-  height: 5px;
-  display: block;
-  z-index: 1;
-  border-radius: 2.5px;
-  background: rgba(255, 255, 255, 0.7);
-  transition: top 0.5s, -webkit-transform 0.5s;
-  transition: transform 0.5s, top 0.5s;
-  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;
-  content: "";
-  position: absolute;
-  left: 0;
-}
-.menu-toggler + label:before {
-  top: 10px;
-}
-.menu-toggler + label:after {
-  top: -10px;
+#navigation {
+	padding-right: 10px;
+	list-style-type: none;
 }
 
-.menu-item:nth-child(1) a {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+#navigation li {
+	margin-left: 20px;
+	
+	padding-left:  10px;
+	padding-right: 8px;	/* The 8px is a bit hackish, but the right padding looks too big otherwise  */
 }
 
-.menu-item:nth-child(2) a {
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
+#navigation li.active {
+	background-color: #333;
 }
 
-.menu-item:nth-child(3) a {
-  -webkit-transform: rotate(-120deg);
-          transform: rotate(-120deg);
+#navigation li.first {
+	margin-left: 0;
 }
 
-.menu-item:nth-child(4) a {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+#name {
+	font-size: 36pt;
+	color: #676767;
+	margin-right: 20px;
 }
 
-.menu-item:nth-child(5) a {
-  -webkit-transform: rotate(-240deg);
-          transform: rotate(-240deg);
+#name:hover {
+	color: #eee;
 }
 
-.menu-item:nth-child(6) a {
-  -webkit-transform: rotate(-300deg);
-          transform: rotate(-300deg);
+#content {
+	margin-top:   40px;
+	text-align: justify;
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.menu-item {
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 80px;
-  height: 80px;
-  display: block;
-  opacity: 0;
-  transition: 0.5s;
+a {
+	text-decoration: none;
+	color: #fff;
 }
 
-.menu-item a {
-  display: block;
-  width: inherit;
-  height: inherit;
-  line-height: 80px;
-  color: rgba(255, 255, 255, 0.7);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 40px;
-  pointer-events: none;
-  transition: .2s;
+a:hover {
+	text-decoration: underline;
 }
-.menu-item a:hover {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-  font-size: 44.4444444444px;
+
+#content a {
+	text-decoration: underline;
+	text-decoration-color: #888;
+}
+
+#content a:hover {
+	text-decoration-color: #fff;
+}
+
+.code {
+	font-family: 'Droid Sans Mono', monospace;
+}
+
+.project {
+	margin-bottom: 30px;
+}
+
+.project-name {
+	font-size: 18pt;
+}
+
+.project-name a {
+	text-decoration: underline;
+}
+
+.project-name a:hover {
+	text-decoration: none;
+}
+
+.project-description {
+	padding-left: 40px;
+}
+
+.github-link {
+	margin-bottom: 100px;
+}
+
+.github-link a {
+	text-decoration: underline;
+}
+
+.github-link a:hover {
+	text-decoration: none;
 }
