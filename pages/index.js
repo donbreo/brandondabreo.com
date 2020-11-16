@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>
           Hello, I’m <strong>Brandon</strong>. I’m a software engineer and a
-          System Administrator. You can contact me on <strong>+91 9920 55 6006</strong>{' '} or drop and email to {' '}
+          System Administrator. You can contact me on <strong>+91 9920 55 6006</strong>{' '} or drop an email to {' '}
           <strong>email@brandondabreo.com</strong>.
         </p>
         {/* <p>
