@@ -2,13 +2,15 @@
     background: #1a1a1a;
     height: 300px;
     margin: 100px 100px 100px 100px;
+    padding-left: 145px;
+    padding-top: 30px;
 }
 
 .button-row{
   display: flex;
   /* justify-content: center; */
   flex-direction: row; 
-  padding: 20px 20px 20px 20px;
+  padding: 10px 20px 0px 20px;
 }
 .button-row.black {
     margin-left: 36px;
@@ -66,13 +68,13 @@
   .basic-button-class:active{
       background-color: #8c4b9e;
       /* color: #050801; */
-      box-shadow: 0px 0px 5px #8c4b9e, 0px 0px 25px #8c4b9e, 0px 0px 50px #8c4b9e, 0px 0px 100px #8c4b9e;
+      box-shadow: 0px 0px 5px #8c4b9e, 0px 0px 10px #8c4b9e;
       -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
     }
     .button-row > div[key-pressed],
   .button-row > div:active {
     background-color: #8c4b9e;
     /* color: #050801; */
-    box-shadow: 0px 0px 5px #8c4b9e, 0px 0px 25px #8c4b9e, 0px 0px 50px #8c4b9e, 0px 0px 100px #8c4b9e;
+    box-shadow: 0px 0px 5px #8c4b9e, 0px 0px 10px #8c4b9e;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
   }
