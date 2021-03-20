@@ -32,7 +32,7 @@ export default function SoundBoard(props) {
             if((key.getAttribute('key-pressed'))!="on"){
                 console.log("key pressed",key.getAttribute('key-letter'))
                 triggerMouseEvent (key, "mousedown");
-                playtone(261.6, 'sine')
+                //playtone(261.6, 'sine')
             }
             key.setAttribute('key-pressed', 'on');
         });
@@ -82,27 +82,27 @@ export default function SoundBoard(props) {
     return (
         <div className="soundboard-main">
             <div className="button-row black">
-                <div className="basic-button-class" onClick={()=>{playtone(277.2, 'sine')}} key-letter="W"><div><div>W</div><div>C<sup>♯</sup></div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="E"><div><div>E</div><div>E<sup>♭</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(277.2, 'sine')}} key-letter="W"><div><div>W</div><div>C<sup>♯</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(311.1, 'sine')}} key-letter="E"><div><div>E</div><div>E<sup>♭</sup></div></div></div>
                 <div className="basic-button-class blank" key-letter=" "> </div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="T"><div><div>T</div><div>F<sup>♯</sup></div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="Y"><div><div>Y</div><div>G<sup>♯</sup></div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="U"><div><div>U</div><div>B<sup>♭</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(370.0, 'sine')}} key-letter="T"><div><div>T</div><div>F<sup>♯</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(415.3, 'sine')}} key-letter="Y"><div><div>Y</div><div>G<sup>♯</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(466.2, 'sine')}} key-letter="U"><div><div>U</div><div>B<sup>♭</sup></div></div></div>
                 <div className="basic-button-class blank" key-letter=" "> </div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="O"><div><div>O</div><div>C<sup>♯</sup></div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="P"><div><div>P</div><div>E<sup>♭</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(554.4, 'sine')}} key-letter="O"><div><div>O</div><div>C<sup>♯</sup></div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(622.3, 'sine')}} key-letter="P"><div><div>P</div><div>E<sup>♭</sup></div></div></div>
             </div>
             <div className="button-row white">
-                <div className="basic-button-class" onMouseDown={()=>{/* playtone(261.6, 'sine') */}} key-letter="A"><div><div>A</div><div>C</div></div></div>
-                <div className="basic-button-class" onMouseDown={()=>{playtone(261.6, 'sine')}} key-letter="S"><div><div>S</div><div>D</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="D"><div><div>D</div><div>E</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="F"><div><div>F</div><div>F</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="G"><div><div>G</div><div>G</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="H"><div><div>H</div><div>A</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="J"><div><div>J</div><div>B</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="K"><div><div>K</div><div>C</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-letter="L"><div><div>L</div><div>D</div></div></div>
-                <div className="basic-button-class" onClick={()=>{playtone(261.6, 'sine')}} key-symbol="186"><div><div>;</div><div>E</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(261.6, 'sine')}} key-letter="A"><div><div>A</div><div>C</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(293.7, 'sine')}} key-letter="S"><div><div>S</div><div>D</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(329.6, 'sine')}} key-letter="D"><div><div>D</div><div>E</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(349.2, 'sine')}} key-letter="F"><div><div>F</div><div>F</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(392.0, 'sine')}} key-letter="G"><div><div>G</div><div>G</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(440.0, 'sine')}} key-letter="H"><div><div>H</div><div>A</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(493.9, 'sine')}} key-letter="J"><div><div>J</div><div>B</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(523.3, 'sine')}} key-letter="K"><div><div>K</div><div>C</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(587.3, 'sine')}} key-letter="L"><div><div>L</div><div>D</div></div></div>
+                <div className="basic-button-class" onMouseDown={()=>{playtone(659.3, 'sine')}} key-symbol="186"><div><div>;</div><div>E</div></div></div>
             </div>
         </div>
     )
