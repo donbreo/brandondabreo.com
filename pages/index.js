@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hello, I’m <strong>Brandon</strong>. I’m a software engineer and a
+          I’m <strong>Brandon</strong>. I’m a software engineer and a
           DevOps newb. For further inquiries contact me on <strong>+91 9920 55 6006</strong>{' '} or drop an email to {' '}
           <strong>hello@brandondabreo.com</strong>.
         </p>

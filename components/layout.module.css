@@ -34,22 +34,21 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
+  font-size: 75pt;
+  font-weight: 900;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
 }
 
 .main_heading {
   color: transparent;
-  -webkit-text-stroke: 2px #000000;
+  -webkit-text-stroke: 2px #43505e;
 }
 
 .main_heading_2 {
   position: absolute;
   top: 0px;
-  color: #000000;
+  color: #46abfb;
   animation: animate 7s ease-in-out infinite;
 }
 
